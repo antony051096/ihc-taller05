@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Sistema Transporte</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Map-Clean.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md" style="background-color: #00c853;">
+        <div class="container-fluid"><a class="navbar-brand" href="Vista-Principal.html">Transportes Lima</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse text-center" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Vista-RutasVerdes.html" style="color: rgba(255,255,255,0.85);">Rutas Verdes</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Vista-Estacion.html" style="color: rgba(255,255,255,0.85);">Estaciones</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Vista-Clima.html" style="color: rgba(255,255,255,0.85);">Clima</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Vista-Preferencias.html" style="color: rgba(255,255,255,0.85);">Preferencias</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link"  href="index.html" onclick=salir() style="color: rgba(255,255,255,0.85);">Cerrar Sesion</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div style="padding-top: 20px;padding-bottom: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="padding-top: 10px;">
+                    <div>
+                        <div class="card">
+                            <div class="card-body"><img class="img-fluid" src="assets/img/Lima_Metro_Linea_1.svg.png" style="width: 75px;margin: 10px;">
+                                <h4 class="card-title" style="padding-top: 10px;">Bayóvar - Villa El Salvador<br></h4>
+                                <h6 class="text-muted card-subtitle mb-2">Linea 1 - Metro de Lima</h6>
+                                <p class="card-text"><strong>Línea L1V de metro horarios y paradas</strong><br></p>
+                                <p class="card-text">La línea L1V de metro (Dirección: Villa El Salvador) tiene 26 paradas desde Bayóvar hasta Villa El Salvador.Horarios del metro L1V para la próxima semana: comienza a operar a las 6:00 y finaliza a las 22:00. Los días de
+                                    operación esta semana son: días hábiles.<br></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title" style="padding-top: 10px;">Estaciones<br></h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item"><span>Bayóvar</span></li>
+                                    <li class="list-group-item"><span>Santa Rosa</span></li>
+                                    <li class="list-group-item"><span>San Martín</span></li>
+                                    <li class="list-group-item"><span>San Carlos</span></li>
+                                    <li class="list-group-item"><span>Los Postes</span></li>
+                                    <li class="list-group-item"><span>Los Jardines</span></li>
+                                    <li class="list-group-item"><span>Piramide del Sol</span></li>
+                                    <li class="list-group-item"><span>Caja de Agua</span></li>
+                                    <li class="list-group-item"><span>Presbitero Maestro</span></li>
+                                    <li class="list-group-item"><span>El Angel</span></li>
+                                    <li class="list-group-item"><span>Miguel Grau</span></li>
+                                    <li class="list-group-item"><span>Gamarra</span></li>
+                                    <li class="list-group-item"><span>Nicolas Arriola</span></li>
+                                    <li class="list-group-item"><span>La Cultura</span></li>
+                                    <li class="list-group-item"><span>San Borja Sur</span></li>
+                                    <li class="list-group-item"><span>Angamos</span></li>
+                                    <li class="list-group-item"><span>Cabitos</span></li>
+                                    <li class="list-group-item"><span>Ayacucho</span></li>
+                                    <li class="list-group-item"><span>Jorge Chavez</span></li>
+                                    <li class="list-group-item"><span>Atocongo</span></li>
+                                    <li class="list-group-item"><span>San Juan</span></li>
+                                    <li class="list-group-item"><span>Miguel Iglesias</span></li>
+                                    <li class="list-group-item"><span>Villa Maria</span></li>
+                                    <li class="list-group-item"><span>Pumacahua</span></li>
+                                    <li class="list-group-item"><span>Parque Industrial</span></li>
+                                    <li class="list-group-item"><span>Villa El Salvador</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="padding-top: 10px;">
+                    <div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="text-muted card-subtitle mb-2">Linea 1 - Metro de Lima</h6><iframe allowfullscreen="" frameborder="0" width="100%" height="450" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaEw6o8OhJvRQnTF3gI_tibMejtfasOlY&amp;q=Paris%2C+France&amp;zoom=15"
+                                    style="margin: 5px;"></iframe></div>
+                        </div>
+                    </div>
+                    <div style="padding-top: 10px;">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Horarios de L1V de metro<br></h4>
+                                <p class="card-text">La línea de la línea L1V de metro opera los días hábiles. Horario regular de operación: 6:00 - 22:00<br></p>
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Dia</th>
+                                                <th class="text-right">Horarios de Operacion</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Lunes</td>
+                                                <td class="text-right">6:00 - 22:00<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Martes</td>
+                                                <td class="text-right">6:00 - 22:00<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Miercoles</td>
+                                                <td class="text-right">6:00 - 22:00<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jueves</td>
+                                                <td class="text-right">6:00 - 22:00<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Viernes</td>
+                                                <td class="text-right">6:00 - 22:00<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sabado</td>
+                                                <td class="text-right">6:00 - 22:00<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Domingo</td>
+                                                <td class="text-right">6:00 - 22:00<br></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding-top: 10px;">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Tarifas</h4>
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Pasajes</th>
+                                                <th class="text-right">Precio</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Pasaje Adulto</td>
+                                                <td class="text-right">S/. 1.50<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pasaje Medio</td>
+                                                <td class="text-right">S/. 0.75</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-responsive" style="margin-top: 10px;">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Tarjetas</th>
+                                                <th class="text-right">Precio</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Pasajeros en general</td>
+                                                <td class="text-right">S/. 5.00<br></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Escolares, universitarios y alumnos de institutos superiores</td>
+                                                <td class="text-right">S/. 5.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="Vista-RutasVerdes.html">Rutas Verdes</a></li>
+                <li class="list-inline-item"><a href="Vista-Estacion.html">Estaciones</a></li>
+                <li class="list-inline-item"><a href="Vista-Clima.html">Clima</a></li>
+            </ul>
+            <p class="copyright">Municipalidad Metropolitana de Lima © 2019</p>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+<script>
+    function salir(){
+        alert('Usted ha cerrado su sesión en el sistema.');
+        window.location="http://localhost/Sist_Transporte/Vista-Login.html";
+    }
+</script>
+</html>

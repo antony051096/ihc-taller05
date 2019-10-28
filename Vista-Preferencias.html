@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Sistema Transporte</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Map-Clean.css">
+</head>
+
+<body>
+
+    
+
+    <nav class="navbar navbar-dark navbar-expand-md" style="background-color: #00c853;">
+        <div class="container-fluid"><a class="navbar-brand" href="Vista-Principal.html">Transportes Lima</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse text-center" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Vista-RutasVerdes.html" style="color: rgba(255,255,255,0.85);">Rutas Verdes</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Vista-Estacion.html" style="color: rgba(255,255,255,0.85);">Estaciones</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Vista-Clima.html" style="color: rgba(255,255,255,0.85);">Clima</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="Vista-Preferencias.html" style="color: rgba(255,255,255,0.85);">Preferencias</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html" onclick= salir() style="color: rgba(255,255,255,0.85);">Cerrar Sesion</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div style="padding-top: 20px;padding-bottom: 20px;">
+        <div class="container">
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <h4 style="padding-top: 10px;">Preferencias</h4>
+                            <p>A continuacion se le solicitaran algunos datos, para que el sistema pueda brindarle mejores opciones de rutas verdes.</p>
+                        </div>
+                        <div class="border rounded" style="margin-top: 10px;margin-bottom: 10px;padding-bottom: 40px;">
+                            <p class="border rounded" style="font-size: 18px;background-color: rgba(0,200,83,0.1);border-radius: 5px;">&nbsp; &nbsp;Estaciones</p>
+                            <div>
+                                <p style="margin-right: 10px;margin-left: 10px;">¿En qué estaciones del tren &nbsp;generalmente circula?</p>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Bayovar</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Santa Rosa</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">San Martin</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4">San Carlos</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5">Los Postes</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6">Los Jardines</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-9"><label class="form-check-label" for="formCheck-9">Piramide del Sol</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-8"><label class="form-check-label" for="formCheck-8">Caja de Agua</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-7"><label class="form-check-label" for="formCheck-7">Presbitero Maestro</label></div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-10"><label class="form-check-label" for="formCheck-10">El Angel</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-11"><label class="form-check-label" for="formCheck-11">Miguel Grau</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-12"><label class="form-check-label" for="formCheck-12">Nicolas Arriola</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-13"><label class="form-check-label" for="formCheck-13">La Cultura</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-14"><label class="form-check-label" for="formCheck-14">San Borja Sur</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-15"><label class="form-check-label" for="formCheck-15">Angamos</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-16"><label class="form-check-label" for="formCheck-16">Cabitos</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-17"><label class="form-check-label" for="formCheck-17">Ayacucho</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-18"><label class="form-check-label" for="formCheck-18">Jorge Chavez</label></div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-19"><label class="form-check-label" for="formCheck-19">Atocongo</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-20"><label class="form-check-label" for="formCheck-20">San Juan</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-21"><label class="form-check-label" for="formCheck-21">Miguel Iglesias</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-22"><label class="form-check-label" for="formCheck-22">Villa Maria</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-23"><label class="form-check-label" for="formCheck-23">Pumacahua</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-24"><label class="form-check-label" for="formCheck-24">Parque Industrial</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-25"><label class="form-check-label" for="formCheck-25">Villa el Salvador</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border rounded" style="margin-top: 10px;margin-bottom: 10px;padding-bottom: 40px;">
+                            <p class="border rounded" style="font-size: 18px;background-color: rgba(0,200,83,0.1);border-radius: 5px;">&nbsp; &nbsp;RutasVerdes</p>
+                            <div>
+                                <p style="margin-right: 10px;margin-left: 10px;">¿Que rutas verdes ha recorrido ultimamente?</p>
+                                <div class="container">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-26"><label class="form-check-label" for="formCheck-26">Bayovar - Ruta 1</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-27"><label class="form-check-label" for="formCheck-27">San Carlos - Ruta 2</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-28"><label class="form-check-label" for="formCheck-28">Los Jardines - Ruta 3</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-29"><label class="form-check-label" for="formCheck-29">Caja de Agua - Ruta 4</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-30"><label class="form-check-label" for="formCheck-30">Presbitero Maestro - Ruta 5</label></div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-31"><label class="form-check-label" for="formCheck-31">El Angel - Recorrido 1</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-32"><label class="form-check-label" for="formCheck-32">La Cultura - Ruta 6</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-33"><label class="form-check-label" for="formCheck-33">San Borja Sur - Ruta 7</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-34"><label class="form-check-label" for="formCheck-34">Angamos - Ruta 8</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-35"><label class="form-check-label" for="formCheck-35">Cabitos - Ruta 9</label></div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-36"><label class="form-check-label" for="formCheck-36">Atocongo - Ruta 10</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-37"><label class="form-check-label" for="formCheck-37">Miguel Iglesias - Recorrido 2</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-38"><label class="form-check-label" for="formCheck-38">Parque Industrial - Ruta 11</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-39"><label class="form-check-label" for="formCheck-39">Villa el Salvador - Ruta 12</label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border rounded" style="margin-top: 10px;margin-bottom: 10px;padding-bottom: 40px;">
+                            <p class="border rounded" style="font-size: 18px;background-color: rgba(0,200,83,0.1);border-radius: 5px;">&nbsp; &nbsp;Frecuencia de Recorridos</p>
+                            <div>
+                                <p style="margin-right: 10px;margin-left: 10px;">¿Con qué frecuencia hace las siguientes actividades al aire libre?<br></p>
+                            </div>
+                            <div class="text-center container">
+                                <div class="form-check form-check-inline" style="margin-right: 20px;margin-left: 20px;"><input class="form-check-input" type="checkbox" id="formCheck-40"><label class="form-check-label" for="formCheck-40">Nunca</label></div>
+                                <div class="form-check form-check-inline" style="margin-right: 20px;margin-left: 20px;"><input class="form-check-input" type="checkbox" id="formCheck-41"><label class="form-check-label" for="formCheck-41">Pocas veces</label></div>
+                                <div class="form-check form-check-inline" style="margin-right: 20px;margin-left: 20px;"><input class="form-check-input" type="checkbox" id="formCheck-42"><label class="form-check-label" for="formCheck-42">De vez en cuando</label></div>
+                                <div class="form-check form-check-inline" style="margin-right: 20px;margin-left: 20px;"><input class="form-check-input" type="checkbox" id="formCheck-43"><label class="form-check-label" for="formCheck-43">Varias veces por semana</label></div>
+                                <div class="form-check form-check-inline" style="margin-right: 20px;margin-left: 20px;"><input class="form-check-input" type="checkbox" id="formCheck-44"><label class="form-check-label" for="formCheck-44">Todos los dias</label></div>
+                            </div>
+                        </div>
+                        <div class="border rounded" style="margin-top: 10px;margin-bottom: 10px;padding-bottom: 40px;">
+                            <p class="border rounded" style="font-size: 18px;background-color: rgba(0,200,83,0.1);border-radius: 5px;">&nbsp; &nbsp;Opiniones</p>
+                            <div>
+                                <p style="margin-right: 10px;margin-left: 10px;">Algunas opiniones que desee dejar:&nbsp;<br></p>
+                            </div>
+                            <div style="padding-top: 10px;padding-right: 20px;padding-bottom: 10px;padding-left: 20px;"><textarea rows="14" name="message" placeholder="Message" class="form-control" style="padding-top: 3px;height: 150px;"></textarea></div>
+                        </div>
+                        <div class="text-right" style="padding-left: 20px;padding-right: 20px;"><a class="btn btn-success text-center" role="button"  onclick="go();" style="background-color: #00c853;">Enviar</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="Vista-RutasVerdes.html">Rutas Verdes</a></li>
+                <li class="list-inline-item"><a href="Vista-Estacion.html">Estaciones</a></li>
+                <li class="list-inline-item"><a href="Vista-Clima.html">Clima</a></li>
+            </ul>
+            <p class="copyright">Municipalidad Metropolitana de Lima © 2019</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+<script>
+
+    function salir(){
+        alert('Usted ha cerrado su sesión en el sistema.');
+    }
+
+    function go(){
+        var isChecked1 = document.getElementById('formCheck-1').checked;
+        var isChecked2 = document.getElementById('formCheck-2').checked;
+        var isChecked3 = document.getElementById('formCheck-3').checked;
+        var isChecked4 = document.getElementById('formCheck-4').checked;
+        var isChecked5 = document.getElementById('formCheck-5').checked;
+        var isChecked6 = document.getElementById('formCheck-6').checked;
+        var isChecked7 = document.getElementById('formCheck-7').checked;
+        var isChecked8 = document.getElementById('formCheck-8').checked;
+        var isChecked9 = document.getElementById('formCheck-9').checked;
+        var isChecked10 = document.getElementById('formCheck-10').checked;
+        var isChecked11 = document.getElementById('formCheck-11').checked;
+        var isChecked12 = document.getElementById('formCheck-12').checked;
+        var isChecked13 = document.getElementById('formCheck-13').checked;
+        var isChecked14 = document.getElementById('formCheck-14').checked;
+        var isChecked15 = document.getElementById('formCheck-15').checked;
+        var isChecked16 = document.getElementById('formCheck-16').checked;
+        var isChecked17 = document.getElementById('formCheck-17').checked;
+        var isChecked18 = document.getElementById('formCheck-18').checked;
+        var isChecked19 = document.getElementById('formCheck-19').checked;
+        var isChecked20 = document.getElementById('formCheck-20').checked;
+        var isChecked21 = document.getElementById('formCheck-21').checked;
+        var isChecked22 = document.getElementById('formCheck-22').checked;
+        var isChecked23 = document.getElementById('formCheck-23').checked;
+        var isChecked24 = document.getElementById('formCheck-24').checked;
+        var isChecked25 = document.getElementById('formCheck-25').checked;
+
+        var isChecked26 = document.getElementById('formCheck-26').checked;
+        var isChecked27 = document.getElementById('formCheck-27').checked;
+        var isChecked28 = document.getElementById('formCheck-28').checked;
+        var isChecked29 = document.getElementById('formCheck-29').checked;
+        var isChecked30 = document.getElementById('formCheck-30').checked;
+        var isChecked31 = document.getElementById('formCheck-31').checked;
+        var isChecked32 = document.getElementById('formCheck-32').checked;
+        var isChecked33 = document.getElementById('formCheck-33').checked;
+        var isChecked34 = document.getElementById('formCheck-34').checked;
+        var isChecked35 = document.getElementById('formCheck-35').checked;
+        var isChecked36 = document.getElementById('formCheck-36').checked;
+        var isChecked37 = document.getElementById('formCheck-37').checked;
+        var isChecked38 = document.getElementById('formCheck-38').checked;
+        var isChecked39 = document.getElementById('formCheck-39').checked;
+
+        var isChecked40 = document.getElementById('formCheck-40').checked;
+        var isChecked41 = document.getElementById('formCheck-41').checked;
+        var isChecked42 = document.getElementById('formCheck-42').checked;
+        var isChecked43 = document.getElementById('formCheck-43').checked;
+        var isChecked44 = document.getElementById('formCheck-44').checked;
+
+        if(isChecked1 || isChecked2 || isChecked3 || isChecked4 || isChecked5 || isChecked6 || isChecked7 || isChecked8 || isChecked9 || isChecked10 || isChecked11 || isChecked12 || isChecked13 || isChecked14 || isChecked15 || isChecked16 || isChecked17 || isChecked18 || isChecked19 || isChecked20 || isChecked21 || isChecked22 || isChecked23 || isChecked24 || isChecked25){
+            //alert('Estacion seleccionada');
+        }else{
+            alert('Porfavor, seleccione las estaciones del tren por las que generalmente circula.');
+        }
+
+        if(isChecked26 || isChecked27 || isChecked28 || isChecked29 || isChecked30 || isChecked31 || isChecked32 || isChecked33 || isChecked34 || isChecked35 || isChecked36 || isChecked37 || isChecked38 || isChecked39){
+            //alert('Ruta verde seleccionada.');
+        }else{
+            alert('Porfavor, seleccione las rutas verdes que ha recorrido.');
+        }        
+
+        if(isChecked40 || isChecked41 || isChecked42 || isChecked43 || isChecked44){
+            //alert('Frecuencia seleccionada.');
+        }else{
+            alert('Porfavor, indique con que frecuecia realiza estos recorridos.');
+        }
+
+          
+
+    }
+</script>
+</html>
