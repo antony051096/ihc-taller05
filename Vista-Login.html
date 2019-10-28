@@ -21,22 +21,22 @@
 <body>
     <SCRIPT  language=JavaScript> 
         function go(){
-            if(document.form.email.value == 'prueba@hotmail.com' && document.form.password.value == '1234'){
+            if(document.form.email.value != '' && document.form.password.value != ''){
                 alert('Usuario validado');
-                window.location="http://localhost/Sist_Transporte/Vista-Principal.html";
+                window.location="https://antony051096.github.io/ihc-taller05/Vista-Principal.html";
             }else{
                 if(document.form.email.value == '' && document.form.password.value == ''){ 
                     alert("Porfavor ingrese email y contraseña correctos."); 
-                    window.location="http://localhost/Sist_Transporte/Vista-Login.html"; 
+                    window.location="https://antony051096.github.io/ihc-taller05/Vista-Login.html"; 
                 }else{ 
                     if (document.form.email.value == ''){
                         alert("Porfavor ingrese un email.");
-                        window.location="http://localhost/Sist_Transporte/Vista-Login.html"; 
+                        window.location="https://antony051096.github.io/ihc-taller05/Vista-Login.html"; 
                         //document.form.submit(); 
                     }
                     if(document.form.password.value == ''){
                         alert("Porfavor ingrese una contraseña.");
-                        window.location="http://localhost/Sist_Transporte/Vista-Login.html";
+                        window.location="https://antony051096.github.io/ihc-taller05/Vista-Login.html";
                     }
                 }
 
